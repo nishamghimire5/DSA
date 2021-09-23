@@ -20,5 +20,5 @@ int main(){
     cout << "Enter e^x _(x value and number of terms u want to check : ";
     int x, n;
     cin >> x >> n;
-    cout << "e^" << x << " = " << e(x, n)<<endl;
+    cout <<setprecision(n)<< "e^" << x << " = " << e(x, n)<<endl;
 }
