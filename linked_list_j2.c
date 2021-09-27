@@ -9,7 +9,7 @@ struct node { //structure to store data and pointer to next structure
 int main(){
     struct node *head, *newnode, *temp;
     head = 0; //since no data ahead of it
-    int choice = 1, count = 1;
+    int choice = 1, count=0;
     while(choice==1){
 
     newnode = (struct node *)malloc(sizeof(struct node)); //allocate memory to the newnodes
@@ -35,4 +35,5 @@ int main(){
         temp=temp->next; //point to next
         count++; //counting totals
     }
+    printf("\n\nTotal entries = %d\n\n", count);
 }
